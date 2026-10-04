@@ -1,0 +1,83 @@
+<!--
+Jose Rodriguez
+10/04/2026
+CSD 340 Module 10.3
+JavaScript - Part 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description"
+          content="JavaScript Event Handling Assignment for CSD 340">
+
+    <meta name="author"
+          content="Jose Rodriguez">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+
+        function changeSport() {
+            document.getElementById("sportImage").src =
+                "images/football.jpeg";
+
+            document.getElementById("sportText").innerHTML =
+                "Football!";
+        }
+
+        function changeLocation() {
+            document.getElementById("locationImage").src =
+                "images/beach.jpeg";
+
+            document.getElementById("locationText").innerHTML =
+                "Time for the beach!";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+        <h2>Click the Images</h2>
+
+        <p>
+            This page demonstrates JavaScript event handling.
+            Click each image below to see what happens.
+        </p>
+
+
+        <h3 id="sportText">Click the image to change the sport.</h3>
+
+        <img id="sportImage"
+             src="images/baseball.jpeg"
+             alt="Baseball"
+             width="400"
+             onclick="changeSport()">
+
+        <br><br>
+
+
+        <h3 id="locationText">
+            Click the image to change the location.
+        </h3>
+
+        <img id="locationImage"
+             src="images/city.jpeg"
+             alt="City"
+             width="400"
+             onclick="changeLocation()">
+
+    </div>
+
+</body>
+
+</html>
